@@ -4,8 +4,6 @@ function checkAnswer() {
 
     // Get the user's selected answer
     const userAnswer = document.querySelector('input[name="quiz"]:checked');
-
-    // Get the feedback element
     const feedback = document.getElementById('feedback');
 
     // Compare the user's answer with the correct answer
@@ -17,4 +15,5 @@ function checkAnswer() {
 }
 
 // Add event listener to the submit button
-document.getElementById('submit-answer').addEventListener('click', checkAnswer);
+const submitButton = document.getElementById('submit-answer');
+submitButton.addEventListener('click', checkAnswer);
